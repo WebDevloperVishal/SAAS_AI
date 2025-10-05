@@ -16,6 +16,11 @@ app.use(clerkMiddleware())
 
 app.get('/', (req, res)=>res.send('Server is Live!'))
 
+app.use(cors({
+  origin: 'http://localhost:5173', // Your Vite dev server URL
+  credentials: true
+}));
+
 app.use(requireAuth())
 
 app.use('/api/ai', aiRouter)

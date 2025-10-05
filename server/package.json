@@ -20,6 +20,6 @@
     "express": "^5.1.0",
     "multer": "^2.0.2",
     "openai": "^6.1.0",
-    "pdf-parse": "^2.1.7"
+    "pdf-parse": "^1.1.1"
   }
 }
